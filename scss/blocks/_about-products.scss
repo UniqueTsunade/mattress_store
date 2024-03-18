@@ -1,0 +1,24 @@
+.about-products__wrapper {
+    margin: 0 auto;
+    padding: 85px 0 85px 0;
+    max-width: 1311px;
+
+    @include for-medium-desktop() {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    @include for-desktop() {
+        padding-left: 110px;
+        padding-left: 110px;
+    }
+
+    @include for-tablet-landscape() {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    @include mobile-only() {
+        padding: 50px 30px;
+    }
+}

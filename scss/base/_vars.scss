@@ -1,0 +1,92 @@
+:root {
+    --backgroundBlue: #29ABE2;
+    --darkBlueBg: #0F4861;
+    --bacckgroundLightBlue: #FAFCFF;
+    --deepBlack: #000000;
+    --clearWhite: #FFFFFF;
+    --mutedBg:#D3D3D3;
+
+    --navText: #272727; 
+    --navBtn: #29ABE2;
+
+    --headerDarkText: #353535;
+    --headerLightText: #FFFFFF;
+
+    --whiteText: #FFFFFF;
+    --darkText: #353535;
+    --accentText: #29ABE2;
+    --mutedText:#9F9F9F;
+ 
+
+    --footerBg: #0F4861;
+    --footerBlueText:#79A0B0;
+    --footerWhiteText: #FFFFFF;
+
+
+    --fontMain: "Museo Sans Cyrl", sans-serif;
+    --fontAccent: "Playfair Display", sans-serif;
+
+}
+
+@mixin retina-bg ($image) {
+    @media
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi) {
+        background-image: $image;
+    }
+}
+
+
+@mixin for-big-desktop() {
+    @media (max-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin for-medium-desktop() {
+    @media (max-width: 1588px) {
+        @content;
+    }
+}
+
+@mixin for-desktop() {
+    @media (max-width: 1410px) {
+        @content;
+    }
+}
+
+@mixin for-small-desktop() {
+    @media (max-width: 1382px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape() {
+    @media (max-width: 1100px) {
+        @content;
+    }
+}
+
+@mixin for-tablet-landscape-only() {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin mobile-only() {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin mobile-medium() {
+    @media (max-width: 432px) {
+        @content;
+    }
+}
+
+@mixin mobile-mini() {
+    @media (max-width: 360px) {
+        @content;
+    }
+}

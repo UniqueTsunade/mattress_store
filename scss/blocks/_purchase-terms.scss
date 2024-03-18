@@ -1,0 +1,109 @@
+.purchase-terms {
+    position: relative;
+    z-index: 2;
+    background-color: #F6F6F6;
+    overflow: hidden;
+}
+
+.purchase-terms::before {
+    content: ""; 
+    position: absolute;
+    z-index: -2;
+
+    top: -13%;
+    right: -10%;
+
+    width: 788px;
+    height: 788px;
+
+    border-radius: 50%;
+    background: linear-gradient(63.46deg, #29ABE2 14.37%, #A0E3FF 92.94%);
+
+    @include for-tablet-landscape() {
+        content: none;
+    }
+}
+
+.purchase-terms::after {
+    content: ""; 
+    position: absolute;
+    z-index: -1;
+
+    background-image: url("./../img/icons/sofa.png");
+    background-repeat: no-repeat;
+
+    width: 1202px;
+    height: 541px;
+
+    top: 83px;
+    right: -340px;
+
+    @include for-small-desktop() {
+        content: none;
+    }
+
+}
+
+.purchase-terms__wrapper {
+    padding: 83px 0 89px;
+    max-width: 1168px;
+
+    @include for-medium-desktop() {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    @include for-desktop() {
+        padding-left: 110px;
+        padding-left: 110px;
+    }
+
+    @include for-tablet-landscape() {
+        padding-left: 110px;
+        padding-right: 65px;
+    }
+
+    @include mobile-only() {
+        padding: 50px 30px;
+    }
+
+}
+
+
+.purchase-terms__items {
+    margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.purchase-terms__item {
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+
+.purchase-terms__img {
+    @include mobile-only() {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.purchase-terms__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: calc(24 / 16);
+    color: var(--deepBlack);
+
+    @include mobile-only() {
+        font-size: 15px;
+    }
+}
+
+.purchase-terms__btn {
+    @include for-tablet-landscape() {
+        display: block;
+        margin: 0 auto;
+    }
+}

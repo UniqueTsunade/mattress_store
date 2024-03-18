@@ -1,0 +1,65 @@
+.selection-buttons {
+    margin-top: -51px;
+    display: flex;
+
+    @include for-tablet-landscape-only() {
+        margin-top: -41px;
+    }
+}
+
+.standard {
+    position: relative;
+    padding: 14px 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: calc(23 / 15);
+    color: var(--whiteText);
+    background-color: var(--backgroundBlue);
+
+    @include for-tablet-landscape-only()  {
+        font-size: 14px;
+        padding: 10px 40px;
+    }
+
+    @include mobile-medium() {
+        padding: 10px 10px;
+    }
+}
+
+.standard::before {
+    content: "";
+    position: absolute;
+    width: 14px; 
+    height: 10px;
+    background-image: url("../img/icons/polygon.svg");
+    top: 50px;
+    left: 83px;
+    background-repeat: no-repeat;
+
+    @include for-tablet-landscape-only()  {
+        top: 40px;
+    }
+
+    @include mobile-medium() {
+        left: 51px;
+    }
+}
+
+
+.custom {
+    padding: 14px 36px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: calc(23 / 15);
+    color:#676767;
+    background-color: #EAEBEB;
+
+    @include for-tablet-landscape-only()  {
+        font-size: 14px;
+        padding: 10px 40px;
+    }
+
+    @include mobile-medium() {
+        padding: 10px 10px;
+    }
+}

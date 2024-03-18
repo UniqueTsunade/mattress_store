@@ -1,0 +1,42 @@
+.slider {
+    position: relative;
+}
+
+.slider__btn {
+    position: absolute;
+}
+
+.slider__btn--prev {
+    left: -5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    @include for-small-desktop() {
+        left: -4%;
+    }
+}
+
+.slider__btn--next {
+    right: -5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+
+    @include for-small-desktop() {
+        right: -4%;
+    }
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%; 
+    background-color: var(--mutedBg);
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: var(--accentText);
+  }
+  

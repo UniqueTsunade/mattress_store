@@ -1,0 +1,33 @@
+.info-list {   
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px
+}
+
+.info-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(17 / 14);
+    color: var(--footerBlueText);
+}
+
+.info-list_addresses {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.info-item_addresses {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(14 / 12); 
+    color: var(--whiteText); 
+}
+
+.info-item_title {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(17 / 14);
+    color: var(--footerBlueText);
+}

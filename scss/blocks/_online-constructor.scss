@@ -1,0 +1,47 @@
+.online-constructor__wrapper {
+    padding: 69px 0 89px;
+    max-width: 1168px;
+    
+    @include for-medium-desktop() {
+        padding-left: 60px;
+        padding-right: 10px;
+    }
+
+    @include for-desktop() {
+        padding-left: 110px;
+        padding-left: 110px;
+    }
+
+    @include for-tablet-landscape() {
+        padding-left: 110px;
+        padding-right: 65px;
+    }
+
+    @include mobile-only() {
+        padding: 50px 30px;
+    }
+
+    @include mobile-medium() {
+        padding: 50px 6px;
+    }
+ 
+}
+
+.online-constructor__inscription {
+    display: flex;
+    justify-content: end;
+
+    font-size: 15px;
+    font-weight: 500;
+    line-height: calc(23 / 15);
+
+    text-decoration-line: underline; 
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 2px; 
+    text-decoration-color: var(--accentText);
+
+    @include for-tablet-landscape-only()  {
+        display: none;
+    }
+}

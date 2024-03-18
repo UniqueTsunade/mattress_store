@@ -1,0 +1,43 @@
+.nav-list {
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    gap: 40px;
+    margin: 0 78px 0 51px;
+
+    @include for-medium-desktop() {
+        gap: 17px;
+    }
+
+    @include for-desktop() {
+        display: none;
+    }
+}
+
+
+.nav-list__link {
+    color: var(--navText);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(17 / 14);
+    transition: color 0.2s ease-in;
+
+    &:hover {
+        color: var(--accentText);
+    }
+
+
+}
+
+.phone-img {
+    animation: phone .9s ease-in-out infinite;
+}
+
+@keyframes phone {
+    0%, 100% {
+     transform: rotate(-20deg);
+    }
+    50% {
+     transform: rotate(21deg);
+    }
+   }    

@@ -1,0 +1,66 @@
+//Fonts
+
+@font-face {
+    font-family: "Museo Sans Cyrl", sans-serif;
+    src: url("../../fonts/MuseoSansCyrl.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display", sans-serif;
+    src: url("../../fonts/PlayfairDisplay-Bold.woff");
+    font-weight: bold;
+    font-display: swap;
+}
+
+
+html, body {
+    font-family: var(--fontMain);
+    letter-spacing: 0em;
+    color: var(--darkText);
+    scroll-behavior: smooth;
+}
+
+.main__btn {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: calc(18 / 15);
+    color: var(--navBtn);
+    padding: 17px 31px;
+    border: var(--navBtn) solid 2px;
+    border-radius: 27px;
+    white-space: nowrap;
+    transition: box-shadow 0.2s ease-in;
+
+    
+
+    // &:hover {
+    //     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+    // }
+
+    @include for-medium-desktop() {
+        font-size: 14px;
+        padding: 12px 21px;
+    } 
+
+    @include  for-tablet-landscape() {
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    @include mobile-only() {
+        font-size: 12px;
+        padding: 10px 19px;
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+.container {
+    max-width: 1311px;
+    margin: 0 auto;
+}  

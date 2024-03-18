@@ -1,0 +1,39 @@
+.mattress-visualization__title {
+    margin: 90px 0 17px;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(22 / 18);
+
+    @include for-tablet-landscape-only() {
+        font-size: 16px;
+    }
+}
+
+.mattress-visualization {
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+
+    @include mobile-only() {
+        column-gap: 12px;
+    }
+}
+.mattress-visualization__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+
+    @include mobile-only() {
+        max-width: 280px;
+    }
+}
+
+.mattress-visualization__height {
+    margin: 11px 0 16px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(21 / 14);
+    color: var(--deepBlack);
+}

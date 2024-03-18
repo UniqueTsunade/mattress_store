@@ -1,0 +1,8 @@
+.compound_right {
+    padding-left: 173px;
+
+    @include for-tablet-landscape() {
+        padding: 0 10px 30px 31px;
+        margin: 0 auto;
+    }
+}
